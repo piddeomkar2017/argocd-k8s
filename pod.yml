@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-pod
   labels:
-    app: my-app
+    run: pod-1
+  name: pod-1
 spec:
   containers:
-  - name: my-container
-    image: nginx
-    ports:
-    - containerPort: 80
+  - image: public.ecr.aws/nginx/nginx:latest
+    name: pod-1
