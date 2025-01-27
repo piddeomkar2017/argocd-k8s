@@ -1,8 +1,6 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  labels:
-    run: pod-1
   name: pod-1
 spec:
   containers:
